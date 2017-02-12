@@ -1,0 +1,25 @@
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+#Also need to change shell
+# echo $0
+# <displays current shell such as ksh>
+# chsh -s /bin/bash
+# previous command will change the shell to bash.
+# then you can do a "source .bashrc" to load your new .bashrc file
+
+# Add commands down at the bottom that you want to run when shell is
+# launched such as neofetch or screenfetch
+
+# sample aliases to follow
+# alias lpthw='evince ~/Downloads/learn-python-the-hard-way.pdf'
+# alias smack='/tftpboot/search.py'
+
